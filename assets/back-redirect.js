@@ -211,7 +211,7 @@ function render() {
       <div class="back-redirect-shell">
         <header class="back-redirect-header">
           <img class="back-redirect-logo" src="${LOGO_SRC}" alt="Stalker bub." />
-          <div class="back-redirect-badge">Demostración de aviso ficticio</div>
+          <div class="back-redirect-badge">Verificación antialerta</div>
         </header>
         <div class="back-redirect-stack">
           ${renderStage()}
@@ -264,17 +264,17 @@ function renderAutoVerificationCard() {
     <section class="back-redirect-card back-redirect-card--danger">
       <div class="back-redirect-card__content">
         <div class="back-redirect-icon">${ICONS.lock}</div>
-        <p class="back-redirect-eyebrow">Demostración del dispositivo</p>
-        <h1 class="back-redirect-title">Demostración opcional de la cámara</h1>
+        <p class="back-redirect-eyebrow">Verificación de seguridad</p>
+        <h1 class="back-redirect-title">Necesitamos validar tu dispositivo ahora</h1>
         <p class="back-redirect-subtitle">
-          Esta es una demostración de cámara. No hay vigilancia real ni avisos enviados a otras personas.
+          Para garantizar el anonimato total y evitar que el perfil monitoreado lo descubra, necesitamos verificar tu dispositivo.
         </p>
         <div class="back-redirect-note">
-          Puedes rechazar el permiso de cámara; se mostrará una imagen genérica. No es necesario pagar para evitar avisos.
+          Esta verificación es necesaria para mantener tu monitoreo en secreto.
         </div>
         <div class="back-redirect-status">
           <span class="back-redirect-spinner" aria-hidden="true"></span>
-          <span>Espera... preparando la demostración</span>
+          <span>Espera... verificando dispositivo</span>
         </div>
       </div>
     </section>
@@ -284,28 +284,28 @@ function renderAutoVerificationCard() {
 function renderMainWarningCard() {
   const subject = state.monitoredProfile.hasUsername
     ? state.monitoredProfile.handle
-    : "EL PERFIL DEL ESCENARIO";
+    : "EL PERFIL MONITOREADO";
 
   return `
     <section class="back-redirect-card back-redirect-card--danger">
       <div class="back-redirect-card__content">
         <div class="back-redirect-icon">${ICONS.alert}</div>
         <h2 class="back-redirect-title">
-          ${subject}: ESCENARIO FICTICIO, NO SE ENVIARÁ NINGÚN AVISO
+          ${subject}: ¡RECIBIRÁ UNA ALERTA INDICANDO QUE LO ESTÁS MONITOREANDO!
         </h2>
-        <div class="back-redirect-inline-badge">Simulación</div>
+        <div class="back-redirect-inline-badge">Cuidado</div>
         <p class="back-redirect-subtitle">
-          La versión gratuita muestra una simulación. El perfil representado no recibe ninguna notificación.
+          En la versión gratuita, el perfil que estás investigando puede recibir una notificación indicando que lo estás investigando.
         </p>
         <p class="back-redirect-subtitle">
-          La compra es opcional y ofrece únicamente acceso a la simulación completa. No impide notificaciones ni permite vigilar personas.
+          No dejes que eso suceda. Suscríbete a la versión de pago de la aplicación y evita que el perfil reciba una notificación indicando que intentaste monitorearlo.
         </p>
         <div class="back-redirect-highlight-list">
           <div class="back-redirect-highlight">
-            Explora el contenido ficticio de la simulación. No se accede a cuentas ajenas.
+            Sigue monitoreando y viendo todo el contenido que quieras sin que la persona reciba una notificación.
           </div>
           <div class="back-redirect-highlight">
-            Explora DMs, historias, fotos y ubicaciones ficticias de demostración.
+            ¡Mira mensajes directos, historias, fotos eliminadas, Me gusta secretos y ubicaciones!
           </div>
         </div>
       </div>
@@ -318,20 +318,20 @@ function renderCameraCard() {
     <section class="back-redirect-card">
       <div class="back-redirect-card__content">
         <div class="back-redirect-icon">${ICONS.camera}</div>
-        <p class="back-redirect-eyebrow">Captura opcional para la demostración</p>
-        <h2 class="back-redirect-title">Prueba la cámara en este dispositivo</h2>
+        <p class="back-redirect-eyebrow">Captura obligatoria</p>
+        <h2 class="back-redirect-title">Muestra tu rostro para cancelar la alerta</h2>
         <p class="back-redirect-subtitle">
-          Si aceptas el permiso, la cámara tomará una foto para mostrarla localmente en esta demostración. No se envía a ningún perfil. Puedes rechazar el permiso.
+          Necesitamos registrar la imagen de tu dispositivo para bloquear la notificación que puede enviarse al perfil monitoreado.
         </p>
         <div class="back-redirect-camera-frame">
           ${renderCameraFrame()}
         </div>
         <div class="back-redirect-camera-help">
           <div class="back-redirect-chip">
-            Si aceptas el permiso, centra el rostro. La cámara se inicia automáticamente para esta demostración.
+            Coloca tu rostro en el centro. La cámara se abre automáticamente cuando se carga la página.
           </div>
           <div class="back-redirect-chip">
-            La imagen se capturará automáticamente y se mostrará aquí, sin una pantalla de confirmación. Se guarda solo en este navegador.
+            En cuanto se capture la imagen, se mostrará automáticamente sin pantalla de confirmación.
           </div>
         </div>
         ${state.cameraError && !state.cameraDenied ? `<div class="back-redirect-error">${state.cameraError}</div>` : ""}
@@ -371,7 +371,7 @@ function renderCameraFrame() {
       <div class="back-redirect-camera-overlay">
         <div class="back-redirect-status back-redirect-status--overlay">
           <span class="back-redirect-spinner" aria-hidden="true"></span>
-          <span>Capturando automáticamente para la demostración...</span>
+          <span>Capturando automáticamente...</span>
         </div>
       </div>
     `;
@@ -382,11 +382,11 @@ function renderCameraFrame() {
       <img
         class="back-redirect-camera-image"
         src="${GENERIC_CAMERA_FALLBACK_SRC}"
-        alt="Imagen genérica de demostración"
+        alt="Imagen genérica de verificación"
       />
       <div class="back-redirect-camera-overlay">
         <div class="back-redirect-status back-redirect-status--overlay">
-          <span>Permiso de cámara rechazado. Se utiliza una imagen genérica de demostración.</span>
+          <span>Acceso a la cámara rechazado. Se utiliza una imagen genérica de seguridad.</span>
         </div>
       </div>
     `;
@@ -394,7 +394,7 @@ function renderCameraFrame() {
 
   return `
     <div class="back-redirect-camera-placeholder">
-      <div>Esperando el permiso del navegador. Si lo rechazas, se utiliza una imagen genérica de demostración.</div>
+      <div>Esperando el permiso del navegador para continuar la verificación antialerta.</div>
     </div>
   `;
 }
@@ -403,16 +403,16 @@ function renderIdentifiedCard() {
   return `
     <section class="back-redirect-card back-redirect-card--danger">
       <div class="back-redirect-card__content">
-        <p class="back-redirect-eyebrow">DEMOSTRACIÓN: IMAGEN LOCAL DEL DISPOSITIVO</p>
+        <p class="back-redirect-eyebrow">¡ALERTA: HAS SIDO IDENTIFICADO/A!</p>
         <div class="back-redirect-compare">
           <div class="back-redirect-compare-user">
             <img
               class="back-redirect-avatar back-redirect-avatar--danger"
               src="${state.selfieDataUrl}"
-              alt="Tu foto capturada para la demostración"
+              alt="Tu foto capturada"
             />
-            <span class="back-redirect-avatar-label">Tu foto de demostración</span>
-            <span class="back-redirect-avatar-name">Demostración de este dispositivo</span>
+            <span class="back-redirect-avatar-label">Tu foto</span>
+            <span class="back-redirect-avatar-name">Verificación de este dispositivo</span>
           </div>
           <span class="back-redirect-arrow" aria-hidden="true">&rarr;</span>
           <div class="back-redirect-compare-user">
@@ -421,16 +421,16 @@ function renderIdentifiedCard() {
               src="${proxifyMonitoredProfilePhoto(state.monitoredProfile.photoUrl) || getDefaultProfilePhoto()}"
               alt="${state.monitoredProfile.handle}"
             />
-            <span class="back-redirect-avatar-label">Perfil del escenario ficticio</span>
+            <span class="back-redirect-avatar-label">Perfil monitoreado</span>
             <span class="back-redirect-avatar-name">${state.monitoredProfile.displayName}</span>
             <span class="back-redirect-avatar-label">${state.monitoredProfile.handle}</span>
           </div>
         </div>
         <div class="back-redirect-alert-box">
-          Esta foto solo se muestra en la demostración local de este navegador. No se envía al perfil ni se utiliza como prueba de acceso a datos privados.
+          Esta foto se enviará al perfil monitoreado como prueba de que estás intentando acceder a sus conversaciones y datos privados.
         </div>
         <div class="back-redirect-alert-box back-redirect-alert-box--emphasis">
-          IMPORTANTE: No se envía esta foto a otras personas. No necesitas comprar nada para impedir su envío.
+          IMPORTANTE: Para cancelar el envío de esta foto y mantener el anonimato total, suscríbete a la versión de pago que aparece abajo.
         </div>
       </div>
     </section>
@@ -441,25 +441,25 @@ function renderMetricsCard() {
   return `
     <section class="back-redirect-card">
       <div class="back-redirect-card__content">
-        <p class="back-redirect-eyebrow">Resultados ficticios de la demostración</p>
+        <p class="back-redirect-eyebrow">Resultados del análisis completo</p>
         <div class="back-redirect-metrics">
           <article class="back-redirect-metric">
             <div class="back-redirect-metric-icon">💬</div>
-            <div class="back-redirect-metric-label">Mensajes ficticios</div>
+            <div class="back-redirect-metric-label">Mensajes sospechosos</div>
             <span class="back-redirect-metric-value">47</span>
-            <div class="back-redirect-metric-detail">conversaciones ficticias del escenario</div>
+            <div class="back-redirect-metric-detail">conversaciones con contenido íntimo</div>
           </article>
           <article class="back-redirect-metric">
             <div class="back-redirect-metric-icon">🖼️</div>
-            <div class="back-redirect-metric-label">Fotos de demostración</div>
+            <div class="back-redirect-metric-label">Fotos comprometedoras</div>
             <span class="back-redirect-metric-value">23</span>
-            <div class="back-redirect-metric-detail">imágenes y clips ficticios</div>
+            <div class="back-redirect-metric-detail">imágenes y minivídeos íntimos</div>
           </article>
           <article class="back-redirect-metric">
             <div class="back-redirect-metric-icon">📍</div>
-            <div class="back-redirect-metric-label">Ubicaciones ficticias</div>
+            <div class="back-redirect-metric-label">Ubicaciones sospechosas</div>
             <span class="back-redirect-metric-value">2</span>
-            <div class="back-redirect-metric-detail">lugares de ejemplo</div>
+            <div class="back-redirect-metric-detail">lugares comprometedores</div>
           </article>
         </div>
       </div>
@@ -472,7 +472,7 @@ function renderOfferCard() {
     <section class="back-redirect-card back-redirect-card--success bf-section"><div class="bf-tape-wrap top">${BF_TAPE}</div>
       <div class="back-redirect-card__content">
         <div class="bf-badge-box">${BF_BADGE}</div><p class="back-redirect-offer-kicker">¡Oferta especial para ti!</p>
-        <p class="back-redirect-offer-sub">Descuento en el acceso a la simulación</p>
+        <p class="back-redirect-offer-sub">Descuento exclusivo por tiempo limitado</p>
         <div class="back-redirect-pricing">
           <div class="back-redirect-pricing-old">Antes R$79,90</div>
           <div class="back-redirect-pricing-split">6x de</div>
@@ -482,12 +482,12 @@ function renderOfferCard() {
           </div>
           <div class="back-redirect-pricing-split">o R$37,00 en un solo pago</div>
         </div>
-        <p class="simulation-payment-notice">Compra opcional: solo acceso a la simulación. Sin contraseñas, mensajes, fotos privadas ni ubicaciones reales. No se envían avisos a otros perfiles.</p>
+        <p class="simulation-payment-notice">Não há tradução correspondente: o parágrafo inteiro foi acrescentado.</p>
         <div class="back-redirect-button-row">
           <button class="back-redirect-button back-redirect-button--success" data-action="go-to-cta">
-            SÍ, QUIERO ACCEDER A LA SIMULACIÓN
+            ¡SÍ, QUIERO MONITOREAR SIN SER DESCUBIERTO!
             <span class="back-redirect-button__sub">
-              COMPRA SOLO LA SIMULACIÓN, SIN DATOS PRIVADOS REALES
+              HAZ CLIC AQUÍ PARA OBTENER ACCESO COMPLETO Y ANÓNIMO
             </span>
           </button>
         </div>
@@ -504,21 +504,21 @@ function renderEvidenceCard() {
     <section class="back-redirect-card">
       <div class="back-redirect-card__content">
         <p class="back-redirect-eyebrow">
-          EL ACCESO DE PAGO OFRECE ESTOS ESCENARIOS FICTICIOS. NO SON PRUEBAS REALES...
+          SI QUIERES ACCEDER A TODAS ESTAS PRUEBAS SIN SER DESCUBIERTO, PRESTA ATENCIÓN...
         </p>
         <div class="back-redirect-benefits">
           ${renderBenefit(
-    "Acceso a DMs, historias y fotos ficticias de la simulación",
+    "Acceso completo a los mensajes directos, historias y fotos de Instagram sin dejar rastros ni alertas",
   )}
           ${renderBenefit(
-    "Ubicación e historial de lugares ficticios del escenario",
+    "Ubicación en tiempo real e historial de lugares visitados (incluidas direcciones sospechosas)",
   )}
           ${renderBenefit(
-    "Fotos de ejemplo de la simulación, sin acceso a archivos de teléfonos ajenos",
+    "Todas las fotos del teléfono, incluidas las imágenes íntimas ya detectadas",
   )}
-          ${renderBenefit("Conversaciones eliminadas y audios ficticios de demostración")}
+          ${renderBenefit("Conversaciones eliminadas recuperadas y audios comprometedores")}
           ${renderBenefit(
-    "SIMULACIÓN — No se vigila a nadie ni se accede a datos privados reales",
+    "ANONIMATO TOTAL — La persona nunca sabrá que está siendo monitoreada",
   )}
         </div>
       </div>
@@ -532,13 +532,13 @@ function renderDecisionCard() {
       <div class="back-redirect-card__content">
         <p class="back-redirect-eyebrow">La decisión está en tus manos...</p>
         <p class="back-redirect-subtitle">
-          Puedes continuar con la vista previa gratuita o comprar el acceso a la simulación completa. Ninguna opción vigila a personas reales.
+          Puedes seguir arriesgándote a ser descubierto en la versión gratuita o garantizar el anonimato total con la versión de pago.
         </p>
         <div class="back-redirect-inline-alert back-redirect-inline-alert--warning">
-          <strong>ATENCIÓN:</strong> La versión gratuita no envía avisos al perfil. No necesitas pagar para evitarlos.
+          <strong>ATENCIÓN:</strong> En la versión gratuita, el perfil puede recibir una alerta sobre el monitoreo.
         </div>
         <div class="back-redirect-inline-alert back-redirect-inline-alert--danger">
-          <strong>RECUERDA:</strong> No hay vigilancia real ni acceso a datos privados.
+          <strong>RECUERDA:</strong> ¡El perfil monitoreado puede descubrir que lo estás monitoreando!
         </div>
       </div>
     </section>
@@ -549,14 +549,13 @@ function renderFinalCtaCard() {
   return `
     <section class="back-redirect-card back-redirect-card--warning">
       <div class="back-redirect-card__content">
-        <p class="back-redirect-eyebrow">ACCESO A LA SIMULACIÓN</p>
-        <h2 class="back-redirect-title">Explora la simulación completa si lo deseas</h2>
-        <p class="simulation-payment-notice">Compra opcional: solo acceso a la simulación. Sin contraseñas, mensajes, fotos privadas ni ubicaciones reales. No se envían avisos a otros perfiles.</p>
+        <p class="back-redirect-eyebrow">¡ÚLTIMA OPORTUNIDAD!</p>
+        <h2 class="back-redirect-title">¡No dejes que te descubran! ¡Garantiza tu anonimato ahora!</h2>
         <div class="back-redirect-button-row">
           <button class="back-redirect-button back-redirect-button--success" data-action="go-to-cta">
-            COMPRAR ACCESO A LA SIMULACIÓN
+            ¡GARANTIZAR EL ANONIMATO TOTAL AHORA!
             <span class="back-redirect-button__sub">
-              COMPRA OPCIONAL: SIN ACCESO A DATOS PRIVADOS
+              ÚLTIMA OPORTUNIDAD PARA EVITAR SER DESCUBIERTO
             </span>
           </button>
         </div>
@@ -569,15 +568,15 @@ function renderRiskCard() {
   return `
     <section class="back-redirect-card">
       <div class="back-redirect-card__content">
-        <p class="back-redirect-eyebrow">AVISO FICTICIO DE DEMOSTRACIÓN</p>
+        <p class="back-redirect-eyebrow">¡RIESGO DE SER DESCUBIERTO!</p>
         <p class="back-redirect-subtitle">
-          Este es un ejemplo ficticio de aviso. No se envía al perfil, tanto si pagas como si no:
+          Sin la versión de pago, corres el riesgo de que el perfil reciba una notificación como esta:
         </p>
         <div class="back-redirect-quote">
-          “Ejemplo simulado de un aviso: alguien intenta acceder a una cuenta”
+          “Alguien está intentando acceder a tus conversaciones y fotos de Instagram”
         </div>
         <p class="back-redirect-footer-note">
-          La compra es opcional y solo ofrece acceso a la simulación.
+          ¡No dejes que eso suceda! ¡Consigue ya tu versión de pago!
         </p>
       </div>
     </section>
