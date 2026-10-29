@@ -1014,16 +1014,16 @@ function ae({
 }
 function ge({ }) {
   return [
-    { title: "STALKEIA APP | Simulación de entretenimiento" },
+    { title: "STALKEIA APP" },
     {
       name: "description",
       content:
-        "Simulación de entretenimiento con escenarios ficticios. No accede a mensajes privados, contraseñas ni ubicaciones reales.",
+        "Descubre cómo stalkear un perfil de Instagram y ver sus Me gusta, seguidores y actividades de forma sencilla. Analiza las interacciones y descubre qué ocurre en el perfil.",
     },
     {
       name: "keywords",
       content:
-        "simulación, entretenimiento, perfiles públicos, escenarios ficticios",
+        "stalkea, stalkea ai, stalkeia ia, stalkear instagram, ver me gusta instagram, stalkear cónyuge instagram, ver actividades instagram, stalkear perfil instagram",
     },
   ];
 }
@@ -1406,7 +1406,7 @@ const xe = H(function () {
     B = n.useCallback(
       (p) => {
         if (p.isLocked) {
-          b("desbloquear esta conversación ficticia");
+          b("desbloquear esta conversación");
           return;
         }
         p.isClickable &&
@@ -1427,12 +1427,12 @@ const xe = H(function () {
     ),
     z = n.useCallback(
       (p) => {
-        p.isOwn || b("Ver historia de demostración");
+        p.isOwn || b("Ver historia");
       },
       [b],
     ),
     D = n.useCallback(() => {
-      b("cargar más mensajes ficticios");
+      b("cargar más mensajes");
     }, [b]),
     F = n.useCallback(() => {
       const p = new URLSearchParams(i);
@@ -1473,8 +1473,8 @@ const xe = H(function () {
             className: "dm-placeholder",
             children: [
               e.jsx("svg", { viewBox: "0 0 24 24", fill: "none", width: "72", height: "72", stroke: "currentColor", strokeWidth: "1", strokeLinecap: "round", strokeLinejoin: "round", children: e.jsx("path", { d: "M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" }) }),
-              e.jsx("h2", { className: "dm-ph-title", children: "Tus mensajes ficticios" }),
-              e.jsx("p", { className: "dm-ph-sub", children: "Prueba el envío simulado de mensajes" }),
+              e.jsx("h2", { className: "dm-ph-title", children: "Tus mensajes" }),
+              e.jsx("p", { className: "dm-ph-sub", children: "Envía mensajes privados a alguien" }),
             ],
           }),
         }),
