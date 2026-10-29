@@ -533,7 +533,7 @@ function ye({
       (I(!0),
         a(!1),
         k(
-          "Introduce el nombre de usuario de la persona que deseas espiar, sin la arroba "@""",
+          "Introduce el nombre de usuario de la persona que deseas espiar, sin la arroba "@"",
         ));
     }, []),
     g = '<span class="typing-cursor">|</span>',
