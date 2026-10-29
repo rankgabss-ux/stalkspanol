@@ -32,7 +32,7 @@ const Ve = {
             id: "3",
             type: "text",
             direction: "sent",
-            content: "Hola, amor de mi vida",
+            content: "Hola, amor de mi vidq",
         },
         { id: "4", type: "text", direction: "sent", content: "vida*" },
         { id: "5", type: "text", direction: "sent", content: "Te extraño" },
@@ -254,7 +254,7 @@ const Ve = {
                 id: "19",
                 type: "text",
                 direction: "received",
-                content: "Por eso te quiero",
+                content: "Por eso te amo",
             },
             {
                 id: "20",
@@ -839,7 +839,7 @@ function it({
                 ? (r(),
                     setTimeout(() => {
                         y(
-                            "Hazte miembro VIP de STALKEIA APP<br>para volver a ver las imágenes de demostración",
+                            "Hazte miembro VIP de STALKEIA APP para poder volver a ver las imágenes del chat",
                         );
                     }, 100))
                 : (d("initial"), x(!1)));
@@ -963,7 +963,7 @@ function it({
                         className: "image-fullscreen-subtext",
                         children:
                             u === "blocked"
-                                ? "El acceso VIP desbloquea únicamente fotos y vídeos de la simulación"
+                                ? "Para desbloquear fotos y vídeos censurados, es necesario ser miembro VIP"
                                 : "Esta imagen puede contener desnudos y actividad sexual explícita",
                     }),
                 ],
@@ -1116,7 +1116,7 @@ function nt({
                         children: [
                             "No se pudo transcribir el mensaje.",
                             e.jsx("br", {}),
-                            "Requiere acceso VIP a la simulación",
+                            "Requiere acceso VIP",
                         ],
                     }),
                 ],
@@ -1171,7 +1171,7 @@ function at({ message: t, onBlockedAction: a, onReelClick: s }) {
         y = () => {
             r && s && t.imageSrc
                 ? s(t.imageSrc)
-                : a(r ? "Ver reel" : "Ver historia de demostración");
+                : a(r ? "Ver reel" : "Ver historia");
         };
     return e.jsxs("div", {
         className: "story-encaminhado-recebido",
@@ -2397,7 +2397,7 @@ function ut({ config: t }) {
                                                 " ",
                                                 e.jsx("span", {
                                                     className: "message-error-link",
-                                                    onClick: () => L("Enviar mensaje simulado"),
+                                                    onClick: () => L("Enviar mensaje"),
                                                     style: {
                                                         fontWeight: "bold",
                                                         color: "rgb(220, 38, 38)",
@@ -2891,16 +2891,16 @@ function ut({ config: t }) {
 }
 function gt({ params: t }) {
     return [
-        { title: "STALKEIA APP | Simulación de entretenimiento" },
+        { title: "STALKEIA APP | Ver Me gusta y actividades del cónyuge" },
         {
             name: "description",
             content:
-                "Simulación de entretenimiento con escenarios ficticios. No accede a mensajes privados, contraseñas ni ubicaciones reales.",
+                "Descubre cómo stalkear un perfil de Instagram y ver sus Me gusta, seguidores y actividades de forma sencilla. Analiza las interacciones y descubre qué sucede en el perfil.",
         },
         {
             name: "keywords",
             content:
-                "simulación, entretenimiento, perfiles públicos, escenarios ficticios",
+                "stalkea, stalkea ai, stalkeia ia, stalkear instagram, ver me gusta instagram, stalkear cónyuge instagram, ver actividades instagram, stalkear perfil instagram",
         },
     ];
 }
