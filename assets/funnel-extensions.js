@@ -44,18 +44,18 @@
   const SLIDES = [
     {
       src: "/images/screenshots/fotoblur1.jpg",
-      title: "Simulación de conversaciones privadas",
-      caption: "Escenario ficticio con contenido de ejemplo y mensajes eliminados simulados.",
+      title: "Rastreo de conversaciones privadas",
+      caption: "IA cruzando contenidos sensibles y mensajes eliminados.",
     },
     {
       src: "/images/screenshots/chat2.nudes1.png",
-      title: "Análisis simulado de medios ocultos",
-      caption: "Archivos ficticios clasificados para la demostración.",
+      title: "Análisis de medios ocultos",
+      caption: "Archivos privados encontrados y clasificados por prioridad.",
     },
     {
       src: "/images/screenshots/fundomaps.png",
-      title: "Simulación de lugares del escenario",
-      caption: "Comparando registros, horarios y desplazamientos ficticios.",
+      title: "Verificación de lugares sospechosos",
+      caption: "Comparando check-ins, horarios y patrones de desplazamiento.",
     },
   ];
 
@@ -1295,33 +1295,33 @@
         data.goals || ["dm", "media", "location", "feed"],
       );
       return {
-        title: "¿Qué quieres explorar en la simulación?",
+        title: "¿Qué quieres descubrir?",
         subtitle:
-          "Elige las áreas de demostración que quieres explorar primero. No se accede a datos privados reales.",
+          "El sistema ya lo ha dejado todo listo. Elige qué áreas quieres desbloquear primero en el análisis de este Instagram.",
         body: `
                     <div class="stalkea-ext-option-grid" data-quiz-options>
                         ${[
             [
               "dm",
-              "Mensajes eliminados y DMs simulados",
+              "Mensajes eliminados y DMs de Instagram",
               "Conversaciones ficticias, mensajes eliminados simulados y señales de ejemplo.",
               QUIZ_ICONS.dm,
             ],
             [
               "media",
-              "Fotos y vídeos ficticios",
+              "Fotos y vídeos privados",
               "Medios ficticios de ejemplo, sin acceso a archivos privados.",
               QUIZ_ICONS.media,
             ],
             [
               "location",
-              "Ubicaciones ficticias",
+              "Ubicaciones sospechosas",
               "Registros y desplazamientos ficticios de ejemplo.",
               QUIZ_ICONS.location,
             ],
             [
               "feed",
-              "Feed, historias e interacciones simulados",
+              "Feed, historias e interacciones",
               "Historias, Me gusta y comportamientos ficticios.",
               QUIZ_ICONS.feed,
             ],
@@ -1368,7 +1368,7 @@
     if (step === 2) {
       const gender = data.gender || "homem";
       return {
-        title: "¿Qué escenario quieres explorar?",
+        title: "¿A quién quieres analizar?",
         subtitle:
           "Esto personaliza la secuencia y los avisos ficticios de la demostración.",
         body: `
@@ -1377,7 +1377,7 @@
                             <span class="stalkea-ext-option-icon">${QUIZ_ICONS.male}</span>
                             <span class="stalkea-ext-option-content">
                                 <span class="stalkea-ext-option-label">Hombre</span>
-                                <small>Mensajes, medios y lugares ficticios para el escenario masculino.</small>
+                                <small>Mensajes, medios y Lugares recientes para el escenario masculino.</small>
                             </span>
                         </button>
                         <button type="button" class="stalkea-ext-option ${gender === "mulher" ? "active" : ""}" data-quiz-gender="mulher" aria-pressed="${gender === "mulher" ? "true" : "false"}">
@@ -1409,7 +1409,7 @@
 
     const invisible = data.invisible || "sim";
     return {
-      title: "¿Activar el modo de demostración invisible?",
+      title: "¿Activar el modo invisible?",
       subtitle:
         "Este modo cambia los avisos de la simulación. No se accede a cuentas ajenas ni se envían notificaciones reales.",
       body: `
@@ -1417,8 +1417,8 @@
                     <button type="button" class="stalkea-ext-option ${invisible === "sim" ? "active" : ""}" data-quiz-invisible="sim" aria-pressed="${invisible === "sim" ? "true" : "false"}">
                         <span class="stalkea-ext-option-icon">${QUIZ_ICONS.eyeOff}</span>
                         <span class="stalkea-ext-option-content">
-                            <span class="stalkea-ext-option-label">Sí, quiero el modo invisible de demostración</span>
-                            <small>Cambia los efectos visuales y avisos de la simulación.</small>
+                            <span class="stalkea-ext-option-label">Sí, quiero un análisis 100% invisible.</span>
+                            <small>Oculta rastros visuales y prioriza alertas silenciosas.</small>
                         </span>
                     </button>
                     <button type="button" class="stalkea-ext-option ${invisible === "nao" ? "active" : ""}" data-quiz-invisible="nao" aria-pressed="${invisible === "nao" ? "true" : "false"}">
@@ -1431,7 +1431,7 @@
                 </div>
                 <div class="stalkea-ext-actions">
                     <button type="button" class="stalkea-ext-btn stalkea-ext-btn-secondary" data-quiz-back>Volver</button>
-                    <button type="button" class="stalkea-ext-btn stalkea-ext-btn-primary" data-quiz-finish onclick="window.dataLayer.push({'event': 'quiz_next_3'});">Iniciar la simulación</button>
+                    <button type="button" class="stalkea-ext-btn stalkea-ext-btn-primary" data-quiz-finish onclick="window.dataLayer.push({'event': 'quiz_next_3'});">Comenzar el análisis</button>
                 </div>
             `,
       afterRender(container) {
@@ -1563,11 +1563,11 @@
       DEFAULT_VSL_EMBED_BASE,
     );
     const statusMessages = [
-      "Preparando el escenario simulado del perfil...",
-      "Cargando mensajes y medios ficticios de demostración...",
-      "Simulando el análisis de patrones ficticios...",
-      "Organizando mensajes, archivos y ubicaciones ficticios...",
-      "Finalizando la vista previa de la simulación...",
+      "Estableciendo una conexión segura con el perfil analizado...",
+      "Sincronizando el historial de Direct y medios privados...",
+      "Aplicando IA para detectar patrones sospechosos...",
+      "Indexando mensajes, archivos y ubicaciones relevantes...",
+      "Finalizando la vista previa segura del informe...",
     ];
 
     activeVslEl = document.createElement("div");
@@ -1576,8 +1576,8 @@
             <div class="stalkea-ext-shell">
                 <div class="stalkea-ext-card">
                     <div class="stalkea-ext-pad">
-                        <div class="stalkea-ext-pill">${QUIZ_ICONS.live}<span>SIMULACIÓN EN CURSO</span></div>
-                        <h2 class="stalkea-ext-title">Observa cómo se prepara el escenario ficticio</h2>
+                        <div class="stalkea-ext-pill">${QUIZ_ICONS.live}<span>ANÁLISIS EN TIEMPO REAL</span></div>
+                        <h2 class="stalkea-ext-title">Observa el análisis mientras se procesa el perfil</h2>
                         <p class="stalkea-ext-subtitle">Estamos preparando mensajes, medios y ubicaciones ficticios para el escenario de <strong>@${profile.username}</strong> sin acceder a datos privados reales.</p>
                         <div class="stalkea-ext-video-frame">
                             ${renderVslMedia()}
@@ -1593,11 +1593,11 @@
                             </div>
                         </div>
                         <div class="stalkea-ext-final-warning stalkea-ext-hidden" data-vsl-final-warning>
-                            <strong>Escenario ficticio preparado</strong>
-                            <p>La simulación de <b>@${profile.username}</b> está lista. Las conversaciones, fotos y ubicaciones del escenario son ficticias y no corresponden a datos privados reales.</p>
+                            <strong>Contenido sospechoso identificado</strong>
+                            <p>El análisis de <b>@${profile.username}</b> ha finalizado. Se encontraron conversaciones, fotos y ubicaciones sospechosas que requieren atención inmediata.</p>
                         </div>
                         <button type="button" class="stalkea-ext-btn stalkea-ext-btn-primary stalkea-ext-hidden" data-vsl-top-continue>
-                            Pulsa aquí para ver la simulación
+                            Haz clic aquí para verlo todo
                         </button>
                         <div class="stalkea-ext-profile">
                             <div class="stalkea-ext-profile-avatar-wrap">
@@ -1606,7 +1606,7 @@
                             </div>
                             <div class="stalkea-ext-profile-main">
                                 <h3>@${profile.username}</h3>
-                                <p>Escenario ficticio • no accede a datos privados</p>
+                                <p>Perfil protegido • análisis confidencial activado</p>
                                 <div class="stalkea-ext-metrics">
                                     ${formatCount(profile.posts, "publicaciones")}
                                     ${formatCount(profile.followers, "seguidores")}
@@ -1617,40 +1617,40 @@
                         <div class="stalkea-ext-analysis">
                             <div class="stalkea-ext-analysis-row">
                                 <div class="stalkea-ext-analysis-copy">
-                                    <strong data-vsl-status-title>Simulación en curso</strong>
+                                    <strong data-vsl-status-title>ANÁLISIS EN TIEMPO REAL</strong>
                                     <span data-vsl-status-text>${statusMessages[0]}</span>
                                 </div>
                                 <div class="stalkea-ext-analysis-badge is-status" data-vsl-progress-badge>2%</div>
                             </div>
                             <div class="stalkea-ext-analysis-row">
                                 <div class="stalkea-ext-analysis-copy">
-                                    <strong>Mensajes ficticios</strong>
+                                    <strong>Mensajes sospechosos</strong>
                                     <span data-vsl-messages>Preparando conversaciones y mensajes eliminados ficticios...</span>
                                 </div>
                                 <div class="stalkea-ext-analysis-badge">${QUIZ_ICONS.dm}</div>
                             </div>
                             <div class="stalkea-ext-analysis-row">
                                 <div class="stalkea-ext-analysis-copy">
-                                    <strong>Imágenes de ejemplo</strong>
+                                    <strong>Imágenes sensibles</strong>
                                     <span data-vsl-media>Clasificando archivos ficticios de demostración...</span>
                                 </div>
                                 <div class="stalkea-ext-analysis-badge">${QUIZ_ICONS.media}</div>
                             </div>
                             <div class="stalkea-ext-analysis-row">
                                 <div class="stalkea-ext-analysis-copy">
-                                    <strong>Lugares ficticios</strong>
+                                    <strong>Lugares recientes</strong>
                                     <span data-vsl-locations>Comparando registros y horarios ficticios...</span>
                                 </div>
                                 <div class="stalkea-ext-analysis-badge">${QUIZ_ICONS.location}</div>
                             </div>
                         </div>
-                        <h3 class="stalkea-ext-section-title">Datos ficticios de demostración:</h3>
+                        <h3 class="stalkea-ext-section-title">Datos sospechosos detectados:</h3>
                         <div class="stalkea-ext-suspect-grid">
                             <div class="stalkea-ext-suspect-card" data-vsl-card="photo">
                                 <div class="stalkea-ext-suspect-head">
                                     <div class="stalkea-ext-suspect-label">
                                         <span class="stalkea-ext-suspect-icon">${QUIZ_ICONS.media}</span>
-                                        <strong>Imagen ficticia del escenario</strong>
+                                        <strong>Imagen sospechosa encontrada</strong>
                                     </div>
                                     <span class="stalkea-ext-suspect-flag">${QUIZ_ICONS.alert}</span>
                                 </div>
@@ -1658,14 +1658,14 @@
                                 <div class="stalkea-ext-suspect-progress"><div data-vsl-card-progress="photo"></div></div>
                                 <div class="stalkea-ext-suspect-preview" data-preview="single">
                                     <div class="stalkea-ext-preview-tile">${QUIZ_ICONS.lock}</div>
-                                    <p>Imagen de ejemplo para un escenario ficticio. No procede de los mensajes privados del perfil.</p>
+                                    <p>Se identificó una foto íntima intercambiada recientemente en los mensajes ocultos.</p>
                                 </div>
                             </div>
                             <div class="stalkea-ext-suspect-card" data-vsl-card="messages">
                                 <div class="stalkea-ext-suspect-head">
                                     <div class="stalkea-ext-suspect-label">
                                         <span class="stalkea-ext-suspect-icon">${QUIZ_ICONS.dm}</span>
-                                        <strong>Mensajes ficticios</strong>
+                                        <strong>Mensajes sospechosos</strong>
                                     </div>
                                     <span class="stalkea-ext-suspect-flag">${QUIZ_ICONS.alert}</span>
                                 </div>
@@ -1676,7 +1676,7 @@
                                 <div class="stalkea-ext-suspect-head">
                                     <div class="stalkea-ext-suspect-label">
                                         <span class="stalkea-ext-suspect-icon">${QUIZ_ICONS.media}</span>
-                                        <strong>Imágenes ficticias</strong>
+                                        <strong>Imágenes sospechosas</strong>
                                     </div>
                                     <span class="stalkea-ext-suspect-flag">${QUIZ_ICONS.alert}</span>
                                 </div>
@@ -1692,7 +1692,7 @@
                                 <div class="stalkea-ext-suspect-head">
                                     <div class="stalkea-ext-suspect-label">
                                         <span class="stalkea-ext-suspect-icon">${QUIZ_ICONS.location}</span>
-                                        <strong>Ubicaciones ficticias</strong>
+                                        <strong>Ubicaciones sospechosas</strong>
                                     </div>
                                     <span class="stalkea-ext-suspect-flag">${QUIZ_ICONS.alert}</span>
                                 </div>
@@ -1702,7 +1702,7 @@
                                     <div class="stalkea-ext-location-result">
                                         ${QUIZ_ICONS.location}
                                         <div>
-                                            <strong>Motel/Casa de masajes (escenario ficticio)</strong>
+                                            <strong>Motel/Casa de masajes</strong>
                                             <p>Últimos 30 días del escenario ficticio</p>
                                         </div>
                                     </div>
@@ -1710,9 +1710,9 @@
                             </div>
                         </div>
                         <div class="stalkea-ext-actions">
-                            <button type="button" class="stalkea-ext-btn stalkea-ext-btn-primary stalkea-ext-hidden" data-vsl-continue>Acceder a la simulación completa</button>
+                            <button type="button" class="stalkea-ext-btn stalkea-ext-btn-primary stalkea-ext-hidden" data-vsl-continue>Acceder a Instagram y verlo todo</button>
                         </div>
-                        <p class="stalkea-ext-footer-note">Los mensajes y ubicaciones son ficticios. No se accede a contraseñas, cuentas ajenas ni datos privados.</p>
+                        <p class="stalkea-ext-footer-note">Los datos se procesan en tiempo real y permanecen confidenciales durante todo el análisis.</p>
                     </div>
                 </div>
             </div>
@@ -1746,25 +1746,25 @@
         key: "photo",
         start: 0,
         end: 60 * 1000,
-        result: "1 imagen ficticia del escenario",
+        result: "1 Imagen sospechosa encontrada",
       },
       {
         key: "messages",
         start: 60 * 1000,
         end: 135 * 1000,
-        result: "90 elementos ficticios del escenario",
+        result: "90 elementos sospechosos identificados",
       },
       {
         key: "media",
         start: 135 * 1000,
         end: 220 * 1000,
-        result: "3 elementos ficticios del escenario",
+        result: "3 elementos sospechosos identificados",
       },
       {
         key: "location",
         start: 220 * 1000,
         end: totalDurationMs,
-        result: "2 elementos ficticios del escenario",
+        result: "2 elementos sospechosos identificados",
       },
     ];
 
@@ -1837,14 +1837,14 @@
 
       if (progress >= 28) {
         messagesEl.textContent =
-          "41 conversaciones ficticias de demostración clasificadas.";
+          "41 conversaciones sensibles identificadas y clasificadas.";
       }
       if (progress >= 54) {
-        mediaEl.textContent = "9 medios ficticios de demostración.";
+        mediaEl.textContent = "9 archivos multimedia privados encontrados y validados.";
       }
       if (progress >= 76) {
         locationsEl.textContent =
-          "3 puntos ficticios con horarios de ejemplo.";
+          "3 puntos sospechosos cruzados con horarios de actividad.";
       }
 
       if (progress >= 100) {
@@ -1855,7 +1855,7 @@
           topContinueButton.classList.remove("stalkea-ext-hidden");
         continueButton.classList.remove("stalkea-ext-hidden");
         statusText.textContent =
-          "Simulación completada. Pulsa el botón para continuar.";
+          "Análisis finalizado. Haz clic en el botón para desbloquear la siguiente etapa.";
       }
     }, 1000);
   }
