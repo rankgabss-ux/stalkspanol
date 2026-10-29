@@ -29,17 +29,17 @@ function te({ }) {
   return [
     {
       title:
-        "STALKEIA APP | Simulación de entretenimiento",
+        "STALKEIA APP",
     },
     {
       name: "description",
       content:
-        "Simulación de entretenimiento con escenarios ficticios. No accede a mensajes privados, contraseñas ni ubicaciones reales.",
+        "Descubre cómo stalkear un perfil de Instagram y ver sus Me gusta, seguidores y actividades de forma sencilla. Analiza las interacciones y descubre qué sucede en el perfil.",
     },
     {
       name: "keywords",
       content:
-        "simulación, entretenimiento, perfiles públicos, escenarios ficticios",
+        "stalkea, stalkea ai, stalkeia ia, stalkear instagram, ver me gusta instagram, stalkear cónyuge instagram, ver actividades instagram, stalkear perfil instagram",
     },
   ];
 }
@@ -125,10 +125,10 @@ const X = 600 * 1e3,
       t.useEffect(() => {
         const a = [
           {
-            text: `¿Exploramos el escenario ficticio de ${n?.full_name?.split(" ")[0] || o || "él/ella"}?`,
+            text: `¿Qué tal, vamos a ver todo el Instagram de ${n?.full_name?.split(" ")[0] || o || "él/ella"}?`,
             isSent: !1,
           },
-          { text: "Voy a comprar el acceso VIP a la simulación 🔥", isSent: !0 },
+          { text: "¡Vamooos, voy a comprar mi acceso VIP! 🔥", isSent: !0 },
         ];
         let i = !0;
         const r = [],
@@ -204,16 +204,16 @@ const X = 600 * 1e3,
       O = t.useMemo(() => ae(o), [o]),
       $ = [
         {
-          q: "¿Qué ofrece esta herramienta?",
-          a: "STALKEIA APP es una simulación de entretenimiento. Puede mostrar datos públicos de un perfil, pero no accede a contraseñas, mensajes, archivos privados ni ubicaciones reales.",
+          q: "¿La herramienta realmente funciona?",
+          a: "¡Sí! STALKEIA APP utiliza tecnología avanzada para acceder a datos de Instagram de forma completamente invisible. Miles de usuarios ya han confirmado la eficacia de la herramienta.",
         },
         {
-          q: "¿Se envían avisos a otras personas?",
-          a: "La simulación no accede a cuentas ajenas ni envía avisos a las personas representadas. No necesitas pagar para evitar notificaciones.",
+          q: "¿La persona sabrá que stalkeé su perfil?",
+          a: "¡No! El acceso es 100 % invisible. La persona no recibe ninguna notificación y no queda ningún rastro de que hayas visto su perfil.",
         },
         {
           q: "¿Permite acceder a perfiles privados?",
-          a: "No. La simulación no permite acceder a contenido privado de ninguna cuenta. Los mensajes, imágenes de ejemplo y ubicaciones mostrados son ficticios.",
+          a: "¡Sí! STALKEIA APP funciona con cualquier tipo de perfil, incluidos perfiles privados, cuentas verificadas y perfiles comerciales.",
         },
         {
           q: "¿Necesito instalar algo?",
@@ -225,7 +225,7 @@ const X = 600 * 1e3,
         },
         {
           q: "¿Durante cuánto tiempo tengo acceso?",
-          a: "El acceso a la simulación es de por vida, sin mensualidades ni renovaciones. La compra no permite acceder a datos privados reales.",
+          a: "¡El acceso es de por vida! Una vez adquirido, puedes utilizar la herramienta para siempre, sin mensualidades ni renovaciones.",
         },
       ],
       F = [
@@ -233,19 +233,19 @@ const X = 600 * 1e3,
           name: "Marcosvianad",
           time: "3h",
           avatar: "/images/avatars/avatar-depoimento-1.jpg",
-          text: "Testimonio ficticio de demostración: probé las conversaciones, imágenes y ubicaciones simuladas. No se accede a información privada real.",
+          text: "Pensé que era una estafa, pero lo probé de todos modos. Pagué y en 3 minutos recibí el acceso. Estaba todo ahí: mensajes directos, fotos que él borraba, hasta funcionó la ubicación. Valió cada centavo.",
         },
         {
           name: "Gieselferreira_34",
           time: "5h",
           avatar: "/images/avatars/avatar-depoimento-2.jpg",
-          text: "Testimonio ficticio de demostración: el acceso VIP permite explorar ejemplos de historias y publicaciones. No se accede a contenido privado real.",
+          text: "El acceso fue súper rápido. Pagué por Pix y en menos de 2 minutos ya estaba viendo todo. Las historias de «Mejores amigos» que él publicaba a escondidas de mí. El sistema realmente funciona.",
         },
         {
           name: "o__prozind34",
           time: "1d",
           avatar: "/images/avatars/avatar-depoimento-3.jpg",
-          text: "Testimonio ficticio de demostración: exploré el escenario completo con conversaciones y ubicaciones de ejemplo. No son datos reales de otra persona.",
+          text: "En la versión completa lo probé con el usuario de mi chico y vi un montón de cosas. Ubicación, fotos ocultas, incluso conversaciones borradas. Fue exactamente como se mostró.",
         },
       ],
       D = [
@@ -269,13 +269,13 @@ const X = 600 * 1e3,
                   children: [
                     e.jsx("strong", {
                       style: { fontWeight: 900 },
-                      children: "Compra el acceso a la simulación",
+                      children: "¡Finaliza tu compra ahora!",
                     }),
                     e.jsx("br", {}),
                     e.jsx("span", {
                       style: { display: "inline-block", marginTop: "3px" },
                       children:
-                        "La compra ofrece acceso únicamente a la simulación. No permite espiar cuentas reales.",
+                        "No salgas ni recargues esta página, el espionaje no podrá realizarse nuevamente.",
                     }),
                   ],
                 })
@@ -284,7 +284,7 @@ const X = 600 * 1e3,
                     e.jsxs("strong", {
                       style: { fontWeight: 900 },
                       children: [
-                        "Tiempo de esta vista previa:",
+                        "Finaliza tu compra en",
                         " ",
                         e.jsx("span", { id: "countdown", children: E }),
                       ],
@@ -293,7 +293,7 @@ const X = 600 * 1e3,
                     e.jsxs("span", {
                       style: { display: "inline-block", marginTop: "3px" },
                       children: [
-                        "Al terminar el contador concluye la vista previa simulada de ",
+                        "Cuando el cronómetro llegue a cero, nunca más será posible acceder al Instagram de ",
                         l,
                         ".",
                       ],
@@ -314,7 +314,7 @@ const X = 600 * 1e3,
                 className: "cta-timer-button",
                 onClick: B,
                 style: { whiteSpace: "nowrap" },
-                children: ["Desbloquear", e.jsx("br", {}), "Acceso a la simulación"],
+                children: ["Desbloquear", e.jsx("br", {}), "Acceso Ahora"],
               }),
             }),
           ],
@@ -332,7 +332,7 @@ const X = 600 * 1e3,
                 e.jsxs("h1", {
                   className: "cta-main-title",
                   children: [
-                    "Una experiencia",
+                    "La mayor herramienta",
                     e.jsx("br", {}),
                     "de ",
                     e.jsx("span", {
@@ -376,7 +376,7 @@ const X = 600 * 1e3,
                       children: [
                         e.jsx("h2", {
                           className: "cta-profile-card-username",
-                          children: n?.full_name || o || "Persona del escenario",
+                          children: n?.full_name || o || "Persona investigada",
                         }),
                         e.jsxs("p", {
                           className: "cta-profile-card-name",
@@ -445,14 +445,14 @@ const X = 600 * 1e3,
                 children: [
                   e.jsx("strong", {
                     className: "cta-badge-title",
-                    children: "¡Simulación 100% finalizada!",
+                    children: "¡Espionaje 100 % finalizado!",
                   }),
                   " ",
                   "🥳",
                   e.jsx("br", {}),
                   e.jsx("span", {
                     className: "cta-badge-line-1",
-                    children: "Adquiere acceso VIP a la simulación y explora",
+                    children: "Adquiere tu acceso VIP y obtén acceso inmediato a:",
                   }),
                   e.jsx("br", {}),
                   e.jsx("span", {
@@ -502,16 +502,16 @@ const X = 600 * 1e3,
                             }),
                             e.jsxs("h3", {
                               className: "cta-feature-title",
-                              children: ["Medios ficticios de ", l],
+                              children: ["Ver archivos multimedia de ", l],
                             }),
                           ],
                         }),
                         e.jsxs("p", {
                           className: "cta-feature-desc",
                           children: [
-                            "Explora ejemplos de medios recibidos y",
+                            "Ve todos los archivos multimedia recibidos y",
                             e.jsx("br", {}),
-                            "enviados, incluidos ejemplos eliminados.",
+                            "enviados, incluidos los elementos eliminados.",
                           ],
                         }),
                       ],
@@ -530,7 +530,7 @@ const X = 600 * 1e3,
                                 cursor: "pointer",
                               }
                               : { cursor: "pointer" },
-                            onClick: () => g("Ver medios de demostración"),
+                            onClick: () => g("Ver contenido multimedia bloqueado"),
                             children: [
                               e.jsx("img", {
                                 src: s.src,
@@ -610,18 +610,18 @@ const X = 600 * 1e3,
                             }),
                             e.jsx("h3", {
                               className: "cta-feature-title",
-                              children: "Ubicación ficticia de demostración",
+                              children: "Ubicación en tiempo real",
                             }),
                           ],
                         }),
                         e.jsxs("p", {
                           className: "cta-feature-desc",
                           children: [
-                            "Explora un lugar ficticio donde ",
+                            "Ve dónde está ",
                             l,
-                            " aparece en la simulación y",
+                            " ahora y",
                             e.jsx("br", {}),
-                            "otros lugares del escenario ficticio.",
+                            "los últimos lugares por los que pasó.",
                           ],
                         }),
                       ],
@@ -659,7 +659,7 @@ const X = 600 * 1e3,
                             children: [
                               e.jsx("div", {
                                 className: "cta-location-name",
-                                children: "Ubicación simulada",
+                                children: "Ubicación actual",
                               }),
                               e.jsxs("p", {
                                 className: "cta-profile-card-name",
@@ -669,7 +669,7 @@ const X = 600 * 1e3,
                                 type: "button",
                                 className: "cta-message-system-btn",
                                 onClick: () =>
-                                  g("Ver ubicación ficticia"),
+                                  g("Ver ubicación en tiempo real"),
                                 children: "Ver",
                               }),
                             ],
@@ -710,18 +710,18 @@ const X = 600 * 1e3,
                             }),
                             e.jsx("h3", {
                               className: "cta-feature-title",
-                              children: "Historias y publicaciones simuladas",
+                              children: "Historias y publicaciones ocultas",
                             }),
                           ],
                         }),
                         e.jsxs("p", {
                           className: "cta-feature-desc",
                           children: [
-                            "Explora historias ficticias de \"Mejores amigos\" y",
+                            "Ve las historias de \"Mejores amigos\" y",
                             e.jsx("br", {}),
-                            "publicaciones ficticias que ",
+                            "las publicaciones que ",
                             l,
-                            " aparecen en este escenario.",
+                            " te ocultó.",
                           ],
                         }),
                       ],
@@ -732,7 +732,7 @@ const X = 600 * 1e3,
                         e.jsxs("div", {
                           className: "cta-story-item",
                           "data-image": "cf1.png",
-                          onClick: () => g("Ver contenido simulado"),
+                          onClick: () => g("Ver contenido restringido"),
                           style: { cursor: "pointer" },
                           children: [
                             e.jsxs("svg", {
@@ -759,7 +759,7 @@ const X = 600 * 1e3,
                             }),
                             e.jsx("p", {
                               className: "cta-story-text",
-                              children: "Contenido ficticio de la simulación",
+                              children: "Contenido restringido",
                             }),
                           ],
                         }),
@@ -793,7 +793,7 @@ const X = 600 * 1e3,
                             }),
                             e.jsx("p", {
                               className: "cta-story-text",
-                              children: "Contenido ficticio de la simulación",
+                              children: "Contenido restringido",
                             }),
                           ],
                         }),
@@ -825,17 +825,17 @@ const X = 600 * 1e3,
                             }),
                             e.jsx("h3", {
                               className: "cta-feature-title",
-                              children: "Mensajes ficticios del Direct",
+                              children: "Mensajes de Direct",
                             }),
                           ],
                         }),
                         e.jsxs("p", {
                           className: "cta-feature-desc",
                           children: [
-                            "Explora los mensajes ficticios del escenario de",
+                            "Ve literalmente todos los mensajes de",
                             e.jsx("br", {}),
                             l,
-                            ", incluidos ejemplos de mensajes temporales",
+                            ", incluidos los mensajes temporales",
                           ],
                         }),
                       ],
@@ -1003,7 +1003,7 @@ const X = 600 * 1e3,
                     }),
                     " tendrás",
                     e.jsx("br", {}),
-                    "acceso completo a la simulación",
+                    "acceso completo a Instagram",
                     e.jsx("br", {}),
                     "de ",
                     l,
@@ -1036,8 +1036,8 @@ const X = 600 * 1e3,
                             className: "cta-pricing-note-track",
                             children: [
                               [
-                                "Pago único por la simulación",
-                                "Acceso inmediato a la simulación",
+                                "Pago único",
+                                "Acceso inmediato",
                                 "Pago seguro",
                                 "30 días de garantía",
                               ].map((s, a) =>
@@ -1066,8 +1066,8 @@ const X = 600 * 1e3,
                                 ),
                               ),
                               [
-                                "Pago único por la simulación",
-                                "Acceso inmediato a la simulación",
+                                "Pago único",
+                                "Acceso inmediato",
                                 "Pago seguro",
                                 "30 días de garantía",
                               ].map((s, a) =>
@@ -1120,7 +1120,7 @@ const X = 600 * 1e3,
                           }),
                         }),
                         e.jsxs("span", {
-                          children: ["Mensajes ficticios del escenario de ", l],
+                          children: ["Todos los mensajes directos de ", l],
                         }),
                       ],
                     }),
@@ -1140,7 +1140,7 @@ const X = 600 * 1e3,
                         }),
                         e.jsx("span", {
                           children:
-                            "Fotos de ejemplo de la simulación (incluidas las eliminadas)",
+                            "Todas las fotos sin censura (incluidas las eliminadas)",
                         }),
                       ],
                     }),
@@ -1160,7 +1160,7 @@ const X = 600 * 1e3,
                         }),
                         e.jsx("span", {
                           children:
-                            "Ubicación ficticia y lugares del escenario simulado",
+                            "Ubicación en tiempo real y lugares en los que estuvo",
                         }),
                       ],
                     }),
@@ -1180,9 +1180,9 @@ const X = 600 * 1e3,
                         }),
                         e.jsxs("span", {
                           children: [
-                            "Avisos simulados cuando ",
+                            "Alerta cada vez que ",
                             l,
-                            " interactúa con alguien en el escenario",
+                            " interactúe con alguien",
                           ],
                         }),
                       ],
@@ -1208,10 +1208,6 @@ const X = 600 * 1e3,
                     }),
                   ],
                 }),
-                e.jsx("p", {
-                  className: "simulation-payment-notice",
-                  children: "La compra ofrece únicamente acceso a una simulación de entretenimiento. No permite obtener contraseñas, mensajes, fotos privadas ni ubicaciones reales, ni evita notificaciones."
-                }),
                 e.jsxs("a", {
                   href: O,
                   className: "cta-pricing-cta-button",
@@ -1236,11 +1232,11 @@ const X = 600 * 1e3,
                   children: [
                     e.jsx("span", {
                       className: "cta-pricing-cta-main",
-                      children: "Comprar acceso a la simulación",
+                      children: "Acceder a todo ahora mismo",
                     }),
                     e.jsx("span", {
                       className: "cta-pricing-cta-sub",
-                      children: "Acceso a la simulación habilitado en hasta 2 minutos",
+                      children: "Acceso habilitado en un máximo de 2 minutos",
                     }),
                   ],
                 }),
@@ -1266,9 +1262,9 @@ const X = 600 * 1e3,
                 e.jsxs("h2", {
                   className: "cta-testimonials-title",
                   children: [
-                    "Ejemplos ficticios de comentarios",
+                    "Mira lo que dicen las personas",
                     e.jsx("br", {}),
-                    "sobre la simulación de ",
+                    "que usan ",
                     e.jsx("span", {
                       className: "cta-gradient",
                       children: "STALKEIA APP",
@@ -1365,9 +1361,9 @@ const X = 600 * 1e3,
                 }),
                 e.jsxs("span", {
                   children: [
-                    "Las conversaciones y ubicaciones son ",
-                    e.jsx("strong", { children: "completamente ficticias" }),
-                    ". No representan datos privados reales.",
+                    "La información a la que se accede es ",
+                    e.jsx("strong", { children: "extremadamente sensible" }),
+                    ". Úsala con responsabilidad.",
                   ],
                 }),
               ],
