@@ -712,7 +712,7 @@ function ue({ children: e }) {
                         content:
                             "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
                     }),
-                    t.jsx("script", {src:"/assets/simulation-notice-es.js", defer:true}),
+                    
                     t.jsx(D, {}),
                     t.jsx(_, {}),
                 ],
