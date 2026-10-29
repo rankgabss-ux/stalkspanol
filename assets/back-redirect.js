@@ -474,13 +474,13 @@ function renderOfferCard() {
         <div class="bf-badge-box">${BF_BADGE}</div><p class="back-redirect-offer-kicker">¡Oferta especial para ti!</p>
         <p class="back-redirect-offer-sub">Descuento exclusivo por tiempo limitado</p>
         <div class="back-redirect-pricing">
-          <div class="back-redirect-pricing-old">Antes R$79,90</div>
-          <div class="back-redirect-pricing-split">6x de</div>
+          <div class="back-redirect-pricing-old">Antes US$ 12,90</div>
+          <div class="back-redirect-pricing-split">Ahora</div>
           <div class="back-redirect-pricing-value">
-            R$5,50
-            <span class="back-redirect-pricing-tag">70% OFF</span>
+            US$ 6,99
+            <span class="back-redirect-pricing-tag">46% OFF</span>
           </div>
-          <div class="back-redirect-pricing-split">o R$37,00 en un solo pago</div>
+          <div class="back-redirect-pricing-split">Pago único en dólares estadounidenses</div>
         </div>
         <p class="simulation-payment-notice">Não há tradução correspondente: o parágrafo inteiro foi acrescentado.</p>
         <div class="back-redirect-button-row">
