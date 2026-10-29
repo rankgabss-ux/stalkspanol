@@ -33,7 +33,7 @@ function normalizeDisplayName(explicitName, profile, username) {
     String(explicitName || "").trim() ||
     String(profile.full_name || profile.name || "").trim() ||
     String(username || "").trim() ||
-    "Perfil del escenario ficticio"
+    "Perfil monitoreado"
   );
 }
 
