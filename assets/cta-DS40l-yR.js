@@ -1015,7 +1015,7 @@ const X = 600 * 1e3,
                   children: [e.jsx("div", { className: "bf-tape-wrap top", dangerouslySetInnerHTML: { __html: BF_TAPE } }), e.jsx("div", { className: "bf-badge-box", dangerouslySetInnerHTML: { __html: BF_BADGE } }), 
                     e.jsx("p", {
                       className: "cta-pricing-old-price",
-                      children: ["Antes: R$ 279,90 ", e.jsx("span", { className: "bf-off", children: "70% OFF" })],
+                      children: ["Antes: US$ 67,90 ", e.jsx("span", { className: "bf-off", children: "81% OFF" })],
                     }),
                     e.jsxs("div", {
                       className: "cta-pricing-current-price",
@@ -1023,7 +1023,7 @@ const X = 600 * 1e3,
                         e.jsxs("p", {
                           className: "cta-pricing-amount",
                           children: [
-                            "R$ 67",
+                            "US$ 12",
                             e.jsx("span", {
                               className: "cta-pricing-cents",
                               children: ",90",
@@ -1202,7 +1202,7 @@ const X = 600 * 1e3,
                           }),
                         }),
                         e.jsx("span", {
-                          children: "2 bonos sorpresa valorados en R$120,00",
+                          children: "2 bonos sorpresa valorados en US$ 22,80",
                         }),
                       ],
                     }),
