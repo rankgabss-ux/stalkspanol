@@ -1208,17 +1208,17 @@ function Ye({ }) {
   return [
     {
       title:
-        "STALKEIA APP | Simulación de entretenimiento",
+        "STALKEIA APP",
     },
     {
       name: "description",
       content:
-        "Simulación de entretenimiento con escenarios ficticios. No accede a mensajes privados, contraseñas ni ubicaciones reales.",
+        "Descubre cómo stalkear un perfil en Instagram y ver los Me gusta, seguidores y actividades de forma sencilla. Analiza las interacciones y descubre qué sucede en el perfil.",
     },
     {
       name: "keywords",
       content:
-        "simulación, entretenimiento, perfiles públicos, escenarios ficticios",
+        "stalkea, stalkea ai, stalkeia ia, stalkear instagram, ver me gusta instagram, stalkear cónyuge instagram, ver actividades instagram, stalkear perfil instagram",
     },
   ];
 }
@@ -1942,7 +1942,7 @@ const Ge = Se(function () {
             e.jsx("div", {
               role: "note",
               style: {margin:"10px 14px 6px",padding:"9px 12px",border:"1px solid #364152",borderRadius:"8px",color:"#cbd5e1",fontSize:"12px",lineHeight:"1.35",background:"#151c25"},
-              children: "Oferta VIP para acceder a toda la simulación"
+              children: "Para liberar el acceso total, tenemos una promoción para VIP"
             }),
             e.jsx(Ae, {
               isHidden: H,
@@ -1968,9 +1968,9 @@ const Ge = Se(function () {
                   children: e.jsx(De, {
                     stories: S,
                     onStoryClick: (a) => {
-                      a.username !== m.username && P("Ver historia de demostración");
+                      a.username !== m.username && P("Ver historia");
                     },
-                    onAddStoryClick: () => P("Añadir historia de demostración"),
+                    onAddStoryClick: () => P("Añadir historia"),
                   }),
                 }),
                 // e.jsx("button", {
@@ -2065,7 +2065,7 @@ const Ge = Se(function () {
                     flex: 1,
                   },
                   children: [
-                    "Has visto las publicaciones de la vista previa. El acceso VIP desbloquea el resto de la simulación.",
+                    "Has visto todas las publicaciones disponibles en la vista previa gratuita, hazte miembro VIP para ver todas las publicaciones.",
                     " ",
                     e.jsx("span", {
                       onClick: () => {
@@ -2186,7 +2186,7 @@ const Ge = Se(function () {
                 }, t.username || t.id)),
               ]
             }),
-            e.jsx("div", { className: "fd-rp-footer", children: e.jsx("div", { className: "fd-rp-footer-links", children: "Información • Ayuda • Prensa • API • Empleo • Privacidad • Condiciones • Ubicaciones • Idioma • Meta Verified" }) }),
+            e.jsx("div", { className: "fd-rp-footer", children: e.jsx("div", { className: "fd-rp-footer-links", children: "Acerca de • Ayuda • Prensa • API • Carreras • Privacidad • Términos • Ubicaciones • Idioma • Meta Verified" }) }),
           ]
         }),
         e.jsx(Me, { onGoToCTA: ue, bottomPosition: "1px" }),
