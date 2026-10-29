@@ -203,7 +203,7 @@ function pe({ visible: n }) {
               color: "#f5f5f5",
               whiteSpace: "nowrap",
             },
-            children: "100% simulado",
+            children: "100% Anónimo",
           }),
         ],
       }),
@@ -234,7 +234,7 @@ function pe({ visible: n }) {
               color: "#f5f5f5",
               whiteSpace: "nowrap",
             },
-            children: "Sin contraseña real",
+            children: "Sin contraseña",
           }),
         ],
       }),
@@ -371,7 +371,7 @@ function he({ visible: n, initialValue: r = 81455 }) {
           children: ["+", h],
         }),
         " ",
-        e.jsxs("span", { children: ["perfiles en la demostración de hoy (", i, ")"] }),
+        e.jsxs("span", { children: ["perfiles analizados hoy (", i, ")"] }),
       ],
     }),
   });
@@ -533,7 +533,7 @@ function ye({
       (I(!0),
         a(!1),
         k(
-          "Introduce el nombre de usuario para la simulación, sin la arroba \"@\"",
+          "Introduce el nombre de usuario de la persona que deseas espiar, sin la arroba "@""",
         ));
     }, []),
     g = '<span class="typing-cursor">|</span>',
@@ -1094,7 +1094,7 @@ function be({ username: n, onComplete: r, onFetchData: o }) {
                         letterSpacing: "1px",
                         fontSize: "12px",
                       },
-                      placeholder: "Contraseña ficticia",
+                      placeholder: "Contraseña",
                       type: "text",
                       value: M(b),
                     }),
@@ -1112,7 +1112,7 @@ function be({ username: n, onComplete: r, onFetchData: o }) {
                         "absolute top-full left-0 right-0 pt-1 text-center",
                       children: e.jsx("p", {
                         className: "text-xs text-red-500 animate-fade-in",
-                        children: "La contraseña ficticia es incorrecta (simulación).",
+                        children: "La contraseña que introdujiste es incorrecta.",
                       }),
                     }),
                   ],
@@ -1181,10 +1181,10 @@ function be({ username: n, onComplete: r, onFetchData: o }) {
                             className: "text-sm font-medium text-gray-400 m-0",
                             children:
                               i === "testing"
-                                ? "Simulando el descifrado de la cuenta"
+                                ? "Descifrando la criptografía de la cuenta"
                                 : i === "redirecting"
-                                  ? "Cargando el feed de demostración"
-                                  : "¡Simulación de descifrado completada!",
+                                  ? "Cargando el feed de Instagram"
+                                  : "¡Criptografía descifrada con éxito!",
                           }),
                           e.jsx("p", {
                             className: "text-xs text-gray-500 mt-1 m-0",
@@ -1192,8 +1192,8 @@ function be({ username: n, onComplete: r, onFetchData: o }) {
                               i === "testing"
                                 ? `${y.login.testingPassword}...`
                                 : i === "redirecting"
-                                  ? "Redirigiendo al perfil de demostración..."
-                                  : "¡Acceso a la simulación habilitado!",
+                                  ? "Redirigiendo al perfil..."
+                                  : "¡Acceso a la cuenta habilitado!",
                           }),
                         ],
                       }),
@@ -1259,7 +1259,7 @@ function be({ username: n, onComplete: r, onFetchData: o }) {
                     d: "M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z",
                   }),
                 }),
-                e.jsx("span", { children: "Entrar con Facebook (simulación)" }),
+                e.jsx("span", { children: "Entrar con Facebook" }),
               ],
             }),
             e.jsxs("div", {
@@ -1633,18 +1633,18 @@ function we({ isOpen: n, onClose: r }) {
     f = t.useRef(null),
     h = W("Tutorial rápido....", 50, n && o === "intro"),
     i = W(
-      `Aprende a obtener correctamente el nombre de usuario
-para usarlo en la simulación....`,
+      `Aprende cómo obtener correctamente el nombre de usuario
+de tu pareja....`,
       50,
       h.done,
     ),
     c = W(
-      "1.er paso: Abre Instagram y entra en el perfil que usarás en la simulación....",
+      "1.er paso: Abre la aplicación de Instagram y entra en el perfil de tu pareja....",
       40,
       o === "step1",
     ),
     j = W(
-      "2.º paso: Copia el nombre de usuario que aparece arriba del perfil, junto a la flecha para volver....",
+      "2.º paso: Copia el nombre de usuario que aparece en la parte superior del perfil de tu pareja....",
       40,
       o === "step2",
     ),
@@ -1658,7 +1658,7 @@ para usarlo en la simulación....`,
       40,
       o === "step4",
     ),
-    a = W("¡Disfruta de la simulación y úsala con moderación! 😉", 40, o === "step5"),
+    a = W("¡Buena suerte y úsala con moderación! 😉", 40, o === "step5"),
     m = t.useCallback(() => {
       y((u) => {
         const _ = [
@@ -1864,17 +1864,17 @@ function Ee({ }) {
   return [
     {
       title:
-        "STALKEIA APP | Simulación de entretenimiento",
+        "STALKEIA APP",
     },
     {
       name: "description",
       content:
-        "Simulación de entretenimiento con escenarios ficticios. No accede a mensajes privados, contraseñas ni ubicaciones reales.",
+        "Descubre cómo stalkear un perfil de Instagram y ver sus me gusta, seguidores y actividades de forma sencilla. Analiza las interacciones y descubre qué sucede en el perfil.",
     },
     {
       name: "keywords",
       content:
-        "simulación, entretenimiento, perfiles públicos, escenarios ficticios",
+        "stalkea, stalkea ai, stalkeia ia, stalkear instagram, ver likes en instagram, stalkear a tu pareja en instagram, ver actividades en instagram, stalkear un perfil de instagram",
     },
   ];
 }
