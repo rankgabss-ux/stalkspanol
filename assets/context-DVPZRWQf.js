@@ -16,24 +16,24 @@ const v = {
     "camera": "Cámara"
   },
   "meta": {
-    "homeTitle": "STALKEIA APP | Simulación de entretenimiento",
-    "homeDescription": "Simulación de entretenimiento con escenarios ficticios. No accede a contraseñas, mensajes privados ni ubicaciones reales.",
-    "homeKeywords": "simulación, entretenimiento, perfil público, escenarios ficticios",
-    "feedTitle": "STALKEIA APP | Simulación de entretenimiento",
-    "feedDescription": "Simulación de entretenimiento con escenarios ficticios. No accede a contraseñas, mensajes privados ni ubicaciones reales.",
-    "feedKeywords": "simulación, entretenimiento, perfil público, escenarios ficticios",
-    "directTitle": "STALKEIA APP | Simulación de entretenimiento",
-    "directDescription": "Simulación de entretenimiento con escenarios ficticios. No accede a contraseñas, mensajes privados ni ubicaciones reales.",
+    "homeTitle": "STALKEIA APP | Stalkear Instagram | Ver Me gusta y actividades del cónyuge",
+    "homeDescription": "Descubre cómo stalkear un perfil de Instagram y ver sus Me gusta, seguidores y actividades de forma sencilla. Analiza las interacciones y descubre qué sucede en el perfil.",
+    "homeKeywords": "stalkear instagram, ver me gusta instagram, stalkear cónyuge instagram, ver actividades instagram, stalkear perfil instagram",
+    "feedTitle": "STALKEIA: Stalkear Instagram | Feed y actividades",
+    "feedDescription": "Descubre cómo stalkear un perfil de Instagram y ver sus Me gusta, seguidores y actividades de forma sencilla. Analiza las interacciones y descubre qué sucede en el perfil.",
+    "feedKeywords": "stalkear instagram, ver me gusta instagram, stalkear cónyuge instagram, ver actividades instagram, stalkear perfil instagram",
+    "directTitle": "STALKEIA: Stalkear Instagram | Mensajes y Direct",
+    "directDescription": "Descubre cómo stalkear un perfil de Instagram y ver mensajes, Me gusta y actividades de forma sencilla. Analiza las interacciones y descubre qué sucede en el perfil.",
     "directKeywords": "simulación, entretenimiento, perfil público, escenarios ficticios",
-    "ctaTitle": "STALKEIA APP | Simulación de entretenimiento",
-    "ctaDescription": "Simulación de entretenimiento con escenarios ficticios. No accede a contraseñas, mensajes privados ni ubicaciones reales.",
-    "ctaKeywords": "simulación, entretenimiento, perfil público, escenarios ficticios"
+    "ctaTitle": "STALKEIA: Stalkear Instagram | Ver Me gusta y actividades del cónyuge",
+    "ctaDescription": "Descubre cómo stalkear un perfil de Instagram y ver sus Me gusta, seguidores y actividades de forma sencilla. Analiza las interacciones y descubre qué sucede en el perfil.",
+    "ctaKeywords": "stalkear instagram, ver me gusta instagram, stalkear cónyuge instagram, ver actividades instagram, stalkear perfil instagram"
   },
   "login": {
-    "testingPassword": "Simulando una contraseña ficticia",
-    "wrongPassword": "Contraseña ficticia incorrecta",
-    "accountAccessed": "¡Acceso a la simulación habilitado!",
-    "loadingProfile": "Cargando el escenario de demostración...",
+    "testingPassword": "Probando contraseña",
+    "wrongPassword": "Contraseña incorrecta",
+    "accountAccessed": "¡Se ha accedido a la cuenta correctamente!",
+    "loadingProfile": "Cargando perfil...",
     "redirecting": "Redirigiendo..."
   },
   "cloaker": {
@@ -76,12 +76,12 @@ const v = {
     }
   },
   "feed": {
-    "allPostsSeen": "Has visto las publicaciones de la vista previa. El acceso VIP desbloquea el resto de la simulación.",
+    "allPostsSeen": "Has visto todas las publicaciones disponibles en la vista previa gratuita. Hazte miembro VIP para ver todas las publicaciones.",
     "becomeVIP": "Ser VIP",
-    "previewAvailableFor": "Vista previa de la simulación disponible durante",
-    "previewDescription": "Tienes 10 minutos de vista previa gratuita. La compra VIP ofrece acceso permanente únicamente a la simulación, sin datos privados reales.",
+    "previewAvailableFor": "Vista previa disponible durante",
+    "previewDescription": "Tienes 10 minutos para probar nuestra herramienta gratis, pero para desbloquear todas las funciones y obtener acceso permanente necesitas ser miembro VIP.",
     "notificationSentMessage": "envió un mensaje",
-    "restrictedContent": "Contenido ficticio de la simulación"
+    "restrictedContent": "Contenido restringido"
   },
   "direct": {
     "messagesHeader": "Mensajes",
@@ -94,23 +94,23 @@ const v = {
     "messagePlaceholder": "Mensaje...",
     "failedToSend": "Error al enviar.",
     "learnMore": "Más información",
-    "audioVIPMessage": "El acceso VIP habilita el audio de la simulación",
+    "audioVIPMessage": "Hazte miembro VIP para activar el volumen",
     "blockedContent": "Contenido bloqueado",
     "sensitiveContent": "Contenido sensible",
-    "blockedContentDescription": "El acceso VIP desbloquea únicamente fotos y vídeos de la simulación",
+    "blockedContentDescription": "Para desbloquear fotos y vídeos censurados, es necesario ser miembro VIP",
     "sensitiveContentDescription": "Esta imagen puede contener desnudez y actividad sexual explícita",
     "viewPhoto": "Ver foto",
     "becomeVIP": "Ser VIP",
-    "viewFullHistory": "Ver historial ficticio completo",
+    "viewFullHistory": "Ver historial completo",
     "viewReel": "Ver reel"
   },
   "blockedPopup": {
     "title": "⚠︎ Acción bloqueada",
-    "description": "Hazte miembro VIP de STALKEIA APP\npara acceder solo a la simulación",
-    "ctaButton": "Comprar la simulación VIP",
+    "description": "Hazte miembro VIP de STALKEIA APP\npara obtener acceso",
+    "ctaButton": "Adquirir acceso VIP",
     "actionTexts": {
-      "Ver historia de demostración": "a los stories",
-      "Añadir historia de demostración": "a agregar stories",
+      "Ver historia": "a los stories",
+      "Añadir historia": "a agregar stories",
       "Me gusta": "a los me gusta",
       "Comentar": "a los comentarios",
       "Republicar": "a repostear",
@@ -128,28 +128,28 @@ const v = {
       "Cámara": "a la cámara",
       "Nuevo mensaje": "a nuevo mensaje",
       "Solicitudes": "a las solicitudes de mensajes",
-      "desbloquear esta conversación ficticia": "a desbloquear esta conversación",
-      "cargar más mensajes ficticios": "a cargar más conversaciones",
+      "desbloquear esta conversación": "a desbloquear esta conversación",
+      "cargar más mensajes": "a cargar más conversaciones",
       "Conversa": "a la conversación",
-      "Ver medios de demostración": "a los medios bloqueados",
-      "Ver ubicación ficticia": "a la ubicación en tiempo real",
-      "Ver contenido simulado": "al contenido restringido",
+      "Ver contenido multimedia bloqueado": "a los medios bloqueados",
+      "Ver ubicación en tiempo real": "a la ubicación en tiempo real",
+      "Ver contenido restringido": "al contenido restringido",
       "Enviar audio": "a enviar audio"
     }
   },
   "landing": {
-    "titleHtml": "¿Qué sucede en este <span class=\"gradient-text\" style=\"font-size:clamp(26.46px, 4.41vw, 39.69px)\">escenario ficticio</span> de Instagram?",
-    "subtitleHtml": "Explora una <span class=\"gradient-text font-semibold\">simulación de entretenimiento</span>. No accede a mensajes ni datos privados reales.",
-    "spyNow": "Iniciar simulación",
+    "titleHtml": "¿Qué hace tu<span class=\"gradient-text\" style=\"font-size:clamp(26.46px, 4.41vw, 39.69px)\"> cónyuge</span> cuando está en Instagram?",
+    "subtitleHtml": "Descubre la verdad sobre <span class=\"gradient-text font-semibold\">cualquier persona</span> accediendo a su Instagram.",
+    "spyNow": "Espiar ahora",
     "inputPlaceholder": "Ej: nombre_del_conyuge_10",
     "limitReached": "Límite Alcanzado",
-    "usedFreeSearch": "Ya utilizaste la búsqueda gratuita de la simulación para",
-    "acquireVIP": "El acceso VIP permite explorar la simulación completa. No permite acceder a datos privados de Instagram.",
-    "unlockVIP": "Desbloquear la simulación VIP",
-    "identityCompromised": "Esta experiencia es una simulación",
-    "identityWarning": "aparece en un escenario ficticio. No se envían avisos al perfil ni es necesario pagar para evitar notificaciones.",
+    "usedFreeSearch": "Ya utilizaste tu búsqueda gratuita para espiar a",
+    "acquireVIP": "¡Adquiere el acceso VIP y obtén acceso completo a Instagram ahora mismo!",
+    "unlockVIP": "Desbloquear acceso VIP",
+    "identityCompromised": "¡Tu identidad está comprometida!",
+    "identityWarning": "puede recibir una notificación sobre tu espionaje; solo los miembros VIP tienen su privacidad protegida al espiar.",
     "confirmInstagram": "Confirma el Instagram",
-    "confirmQuestion": "¿Deseas usar en la simulación el perfil",
+    "confirmQuestion": "¿Deseas espiar el perfil",
     "profilePicAlt": "Foto de perfil",
     "posts": "publicaciones",
     "followers": "seguidores",
@@ -159,8 +159,8 @@ const v = {
     "confirm": "Confirmar"
   },
   "cta": {
-    "accessNow": "Comprar acceso a la simulación",
-    "oneTimePayment": "pago único por la simulación",
+    "accessNow": "Acceder a todo ahora mismo",
+    "oneTimePayment": "pago único",
     "limitedOffer": "Oferta limitada",
     "securePayment": "Pago seguro"
   },
@@ -168,19 +168,19 @@ const v = {
     "sentAMessage": "envió un mensaje"
   },
   "whitePage": {
-    "title": "STALKEIA APP - Simulación de entretenimiento",
-    "subtitle": "Consulta los datos públicos disponibles de un perfil y explora escenarios ficticios. La herramienta no accede a datos privados.",
+    "title": "STALKEIA APP - Analizador de perfiles de Instagram",
+    "subtitle": "Analiza cualquier perfil público de Instagram: la herramienta es segura e ilimitada. Introduce un nombre de usuario o enlace de perfil para obtener todas las estadísticas de la cuenta.",
     "analyze": "Analizar",
-    "profilesAnalyzed": "perfiles en la demostración",
+    "profilesAnalyzed": "perfiles analizados",
     "followersAndEngagement": "Seguidores y tasa de engagement",
-    "postsAndStories": "Publicaciones e historias de demostración",
+    "postsAndStories": "Análisis de publicaciones e historias",
     "engagement": "Engagement",
     "followers": "Seguidores",
     "following": "Siguiendo",
     "posts": "Posts",
     "unlock": "Desbloquear",
     "recentPosts": "Posts Recientes",
-    "latestStories": "Historias de ejemplo",
+    "latestStories": "Últimas historias",
     "showStories": "MOSTRAR STORIES",
     "free": "Gratis",
     "premium": "Premium",
@@ -196,7 +196,7 @@ const v = {
     "weeksAgo": "{{count}} sem"
   }
 };
-const i = {"pt-BR":v,en:v,es:v}, n="app_locale",r="es";
+const i = {"pt-BR":p,en:f,es:v}, n="app_locale",r="es";
 function b() {
     if (typeof window > "u") return r;
     const e = localStorage.getItem(n);
