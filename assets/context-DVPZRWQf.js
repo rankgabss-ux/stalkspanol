@@ -196,7 +196,9 @@ const v = {
     "weeksAgo": "{{count}} sem"
   }
 };
-const i = {"pt-BR":p,en:f,es:v}, n="app_locale",r="es";
+const i = { "pt-BR": v, en: v, es: v },
+      n = "app_locale",
+      r = "es";
 function b() {
     if (typeof window > "u") return r;
     const e = localStorage.getItem(n);
