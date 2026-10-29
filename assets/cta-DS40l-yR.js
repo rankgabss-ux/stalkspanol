@@ -12,7 +12,7 @@ function ne() {
   return a || null;
 }
 function ae(s) {
-  const r = "https://go.perfectpay.com.br/PPU38CQHBRD",
+  const r = "https://go.centerpag.com/PPU38CQHD0C",
     a = K(),
     i = new URLSearchParams();
   (a.utm_source && i.set("utm_source", a.utm_source),
