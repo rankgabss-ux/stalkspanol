@@ -11,7 +11,7 @@ import {
 } from "./back-redirect-helpers.js?v=20260803-01";
 
 const LOGO_SRC = "/images/logos/logo-vert-transparente.png";
-const CHECKOUT_URL = "https://go.centerpag.com/PPU38CQHD0N";
+const CHECKOUT_URL = "https://go.centerpag.com/PPU38CQHDIG";
 const GENERIC_CAMERA_FALLBACK_SRC =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 600'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop stop-color='%23170d31'/%3E%3Cstop offset='1' stop-color='%23301a57'/%3E%3C/linearGradient%3E%3CradialGradient id='glow' cx='50%25' cy='28%25' r='60%25'%3E%3Cstop stop-color='%23ab58f4' stop-opacity='.52'/%3E%3Cstop offset='1' stop-color='%23ab58f4' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='480' height='600' rx='48' fill='url(%23bg)'/%3E%3Crect width='480' height='600' rx='48' fill='url(%23glow)'/%3E%3Ccircle cx='240' cy='220' r='82' fill='%23f1d8f8' fill-opacity='.95'/%3E%3Cpath d='M112 476c26-84 77-129 128-129s102 45 128 129' fill='%23f1d8f8' fill-opacity='.95'/%3E%3Ccircle cx='240' cy='220' r='118' fill='none' stroke='%239a5cff' stroke-width='10' stroke-opacity='.88'/%3E%3C/svg%3E";
 
